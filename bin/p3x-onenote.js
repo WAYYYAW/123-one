@@ -17,11 +17,11 @@ const mz = require('mz');
 
 const start = async() => {
     try {
-        const desktopEntry = `${process.env.HOME}/.local/share/applications/p3x-onenote-cli.desktop`;
+        const desktopEntry = `${process.env.HOME}/.local/share/applications/123pan-web.desktop`;
         const exists = await utils.fs.ensureFile(desktopEntry, `[Desktop Entry]
 Version=1.0
 Type=Application
-Name=P3X Onenote
+Name=123pan-web
 Icon=${path.resolve(__dirname + '/../src/electron/images/128x128.png')}
 Exec=${__filename}
 Comment=https://www.patrikx3.com
